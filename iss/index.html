@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="f38e5e8c-a760-4c0a-814c-c1489633d62f"></script>
+  <meta content="text/html; charset=UTF-8" name="Content-Type" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <meta property="og:site_name" content="ISS Tracker" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="ISS Tracker" />
+  <meta property="og:type" content="article" />
+
+    <meta name="description" content="Hello World by Michel Zeller" />
+  <meta property="og:description" content="Hello World by Michel Zeller" />
+
+
+
+<meta property="og:image" content="/assets/nxt.png" />
+<meta name="author" content="Michel Zeller" />
+
+
+  <meta property="og:url" content="https://mizeller.github.io/helloworld/iss/"  />  
+  <link rel="canonical" href="https://mizeller.github.io/helloworld/iss/"  />
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://rory.codes/assets/192.png" />
+  <meta name="twitter:site" content="@mrroryflint" />
+  <meta name="twitter:creator" content="@mrroryflint" />
+
+  <link rel="icon" href="/assets/nxt.png" sizes="32x32">
+  <link rel="icon" href="/assets/nxt.png"sizes="192x192"> 
+
+  <link rel="icon" href="/assets/nxt.ico" type="image/x-icon" />  
+  <title>ISS Tracker - Michel Zeller</title>  
+  <link rel="stylesheet" href="/css/styles.css">
+      <script>
+      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDarkMode()) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+</head>
+
+<body>
+    
+<a class="muted small" href="/">← michel zeller</a>
+<h1>ISS Tracker</h1>
+<a class="port-link" href="https://ruairidhflint.github.io/iss/" target="_blank" rel="noopener noreferrer" `>Deployed</a>
+<p>ISS Tracker uses HTML, CSS and Javascript along with the Google Maps API and an ISS Location
+API to visually display exactly where the International Space Station is at any time.</p>
+<p><img src="/assets/images/iss.webp" alt="ISS app screenshot" title="ISS"></p>
+<p>After being inspired by a similar project displaying incredible information about the International
+Space Station, I took the oppurtunity to learn about interacting with the Google Maps API and show
+a visual track of the current ISS location.</p>
+<p>I stripped back all extrenuous information to give as clear as possible representation of the location,
+speed and trajectory.</p>
+
+
+      <script>
+          document.getElementById("toggleDarkMode").addEventListener("click", function() {
+      if (isDarkMode()) {
+        localStorage.theme = 'light'
+        document.documentElement.classList.remove('dark')
+      } else {
+        localStorage.theme = 'dark'
+        document.documentElement.classList.add('dark')
+      }
+       updateToggleButtonText();
+      });
+      updateToggleButtonText();
+    </script>
+</body>
+</html>

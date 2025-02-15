@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="f38e5e8c-a760-4c0a-814c-c1489633d62f"></script>
+  <meta content="text/html; charset=UTF-8" name="Content-Type" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <meta property="og:site_name" content="Ceriph" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Ceriph" />
+  <meta property="og:type" content="article" />
+
+    <meta name="description" content="Hello World by Michel Zeller" />
+  <meta property="og:description" content="Hello World by Michel Zeller" />
+
+
+
+<meta property="og:image" content="/assets/nxt.png" />
+<meta name="author" content="Michel Zeller" />
+
+
+  <meta property="og:url" content="https://mizeller.github.io/helloworld/ceriph/"  />  
+  <link rel="canonical" href="https://mizeller.github.io/helloworld/ceriph/"  />
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://rory.codes/assets/192.png" />
+  <meta name="twitter:site" content="@mrroryflint" />
+  <meta name="twitter:creator" content="@mrroryflint" />
+
+  <link rel="icon" href="/assets/nxt.png" sizes="32x32">
+  <link rel="icon" href="/assets/nxt.png"sizes="192x192"> 
+
+  <link rel="icon" href="/assets/nxt.ico" type="image/x-icon" />  
+  <title>Ceriph - Michel Zeller</title>  
+  <link rel="stylesheet" href="/css/styles.css">
+      <script>
+      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDarkMode()) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+</head>
+
+<body>
+    
+<a class="muted small" href="/">← michel zeller</a>
+<h1>Ceriph</h1>
+<a class="port-link" href="http://ceriph.netlify.app/" target="_blank" rel="noopener noreferrer" `>Deployed</a>
+<p>Ceriph is an application that allows encryption and decryption of messages using a simple substitution cipher.
+Built with React and styled-components.
+<img src="/assets/images/ceriph.webp" alt="Ceriph app screenshot" title="Ceriph"></p>
+<p>After a visit to the fantastic <a href="https://bletchleypark.org.uk/">Bletchley Park</a> I was inspired to read up and
+learn about ciphers and code breaking. As I was learning I built a simple app to encrypt and decrypt messages using a substitution
+cipher. It uses one of the most simple ciphers possible but it was a great joy to take a process I was reading about
+and implement it dynamically in Javascript.</p>
+<p>Continued development is in process and as I learn more about more sophisticated encryption methodology I am planning
+to add a variety of ciphers to choose from and additional information to learn more about the history of each.</p>
+
+
+      <script>
+          document.getElementById("toggleDarkMode").addEventListener("click", function() {
+      if (isDarkMode()) {
+        localStorage.theme = 'light'
+        document.documentElement.classList.remove('dark')
+      } else {
+        localStorage.theme = 'dark'
+        document.documentElement.classList.add('dark')
+      }
+       updateToggleButtonText();
+      });
+      updateToggleButtonText();
+    </script>
+</body>
+</html>
