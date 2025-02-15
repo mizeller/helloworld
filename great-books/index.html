@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head>{ DateTime } = require('luxon')
 <script defer src="https://cloud.umami.is/script.js" data-website-id="f38e5e8c-a760-4c0a-814c-c1489633d62f"></script>
   <meta content="text/html; charset=UTF-8" name="Content-Type" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />)
   <meta name="viewport" content="width=device-width" />
   <meta property="og:site_name" content="Great Books - Why I Created My Own Literary Education" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="Great Books - Why I Created My Own Literary Education" />
-  <meta property="og:type" content="article" />
-
+  <meta property="og:type" content="article" />)
+ateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
     <meta name="description" content="Hello World by Michel Zeller" />
   <meta property="og:description" content="Hello World by Michel Zeller" />
-
-
-
+onfig.addShortcode('year', () => {
+    const year = new Date().getFullYear()
+    return `${year}`
 <meta property="og:image" content="/assets/nxt.png" />
 <meta name="author" content="Michel Zeller" />
-
-
+  eleventyConfig.addCollection('portfolio', function (collection) {
+ion
   <meta property="og:url" content="https://mizeller.github.io/helloworld/great-books/"  />  
   <link rel="canonical" href="https://mizeller.github.io/helloworld/great-books/"  />
-
-
+onfig.addCollection("education", function(collection) {
+    return collection.getFilteredByGlob("src/education/*.md")
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="https://rory.codes/assets/192.png" />
   <meta name="twitter:site" content="@mrroryflint" />
   <meta name="twitter:creator" content="@mrroryflint" />
 
-  <link rel="icon" href="/assets/nxt.png" sizes="32x32">
-  <link rel="icon" href="/assets/nxt.png"sizes="192x192"> 
-
-  <link rel="icon" href="/assets/nxt.ico" type="image/x-icon" />  
+  <link rel="icon" href="/helloworld/assets/nxt.png" sizes="32x32">
+  <link rel="icon" href="/helloworld/assets/nxt.png" sizes="192x192">
+  <link rel="icon" href="/helloworld/assets/nxt.ico" type="image/x-icon" />
   <title>Great Books - Why I Created My Own Literary Education - Michel Zeller</title>  
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/helloworld/css/styles.css">
       <script>
-      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
-      if (isDarkMode()) {
-        document.documentElement.classList.add('dark')
+  let options = {kMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    html: true,kMode()) {
+  }     document.documentElement.classList.add('dark')
       } else {
-        document.documentElement.classList.remove('dark')
-      }
-    </script>
+  let md = markdownIt(options).use(markdownItCheckbox)k')
+  md.render('[ ] unchecked')
+  md.render('[x] checked')
 </head>
+  eleventyConfig.setLibrary('md', md)  return {    pathPrefix: "/helloworld",    dir: {      input: 'src',      output: './_site',    },  }}
 
 <body>
     
