@@ -53,19 +53,6 @@ implementation simply as a way to refactor the code and learn about a new techno
 the day to Twitter or set it as their homepage to have an interesting prompt to start the morning.</p>
 
 
-    <script>
-        document.getElementById("toggleDarkMode").addEventListener("click", function() {
-            if (isDarkMode()) {
-                localStorage.theme = 'light'
-                document.documentElement.classList.remove('dark')
-            } else {
-                localStorage.theme = 'dark'
-                document.documentElement.classList.add('dark')
-            }
-            updateToggleButtonText();
-        });
-        updateToggleButtonText();
-    </script>
     <script src="/js/darkmode.js"></script>
 </body>
 </html>

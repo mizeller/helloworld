@@ -50,19 +50,6 @@ can manually add or remove them from their own Goggins Blocker dashboard. All da
 Chrome and requires no login nor is any data sent or received by first or third parties.</p>
 
 
-    <script>
-        document.getElementById("toggleDarkMode").addEventListener("click", function() {
-            if (isDarkMode()) {
-                localStorage.theme = 'light'
-                document.documentElement.classList.remove('dark')
-            } else {
-                localStorage.theme = 'dark'
-                document.documentElement.classList.add('dark')
-            }
-            updateToggleButtonText();
-        });
-        updateToggleButtonText();
-    </script>
     <script src="/js/darkmode.js"></script>
 </body>
 </html>

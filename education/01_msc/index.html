@@ -37,38 +37,24 @@
 <article class="education-timeline">
     <div class="education-item">
         <div class="education-header">
-            <h2 class="school">ETH Zurich</h2>
-            <time class="education-period">
-                Sep 2017 - Sep 2021
-            </time>
+            <div class="education-top-line">
+                <h2 class="school">ETH Zurich</h2>
+                <time class="education-period">
+                    Sep 2022 - Sep 2024
+                </time>
+            </div>
+            <h3 class="degree">MSc Mechanical Engineering</h3>
         </div>
         <div class="education-details">
-            <div class="education-titles">
-                <h3 class="degree">BSc Mechanical Engineering</h3>
-                <div class="focus">Mechanical Engineering</div>
-            </div>
             <div class="education-content">
-                <p>Bachelor studies in Mechanical Engineering at ETH Zurich.
-Final Thesis: &quot;Drone Tracking in Challenging Conditions&quot;</p>
+                <p>Research-centered program with focus on deep learning for computer vision and robotics.
+Final Thesis: &quot;Reconstructing Hand-Object Interactions in 3D from Monocular Video with 3DGS&quot;</p>
 
             </div>
         </div>
     </div>
 </article>
 
-    <script>
-        document.getElementById("toggleDarkMode").addEventListener("click", function() {
-            if (isDarkMode()) {
-                localStorage.theme = 'light'
-                document.documentElement.classList.remove('dark')
-            } else {
-                localStorage.theme = 'dark'
-                document.documentElement.classList.add('dark')
-            }
-            updateToggleButtonText();
-        });
-        updateToggleButtonText();
-    </script>
     <script src="/js/darkmode.js"></script>
 </body>
 </html>

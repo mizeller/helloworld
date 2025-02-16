@@ -49,19 +49,6 @@ and efficient UI to display the text.</p>
 <p>The project was written in TypeScript and styled in Tailwind. At point of deployment, it scored 100 across all Lighthouse metrics.</p>
 
 
-    <script>
-        document.getElementById("toggleDarkMode").addEventListener("click", function() {
-            if (isDarkMode()) {
-                localStorage.theme = 'light'
-                document.documentElement.classList.remove('dark')
-            } else {
-                localStorage.theme = 'dark'
-                document.documentElement.classList.add('dark')
-            }
-            updateToggleButtonText();
-        });
-        updateToggleButtonText();
-    </script>
     <script src="/js/darkmode.js"></script>
 </body>
 </html>

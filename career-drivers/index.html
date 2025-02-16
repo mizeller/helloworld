@@ -50,19 +50,6 @@ the results displayed.</p>
 send an email of your results and more detailed insights into the outcome.</p>
 
 
-    <script>
-        document.getElementById("toggleDarkMode").addEventListener("click", function() {
-            if (isDarkMode()) {
-                localStorage.theme = 'light'
-                document.documentElement.classList.remove('dark')
-            } else {
-                localStorage.theme = 'dark'
-                document.documentElement.classList.add('dark')
-            }
-            updateToggleButtonText();
-        });
-        updateToggleButtonText();
-    </script>
     <script src="/js/darkmode.js"></script>
 </body>
 </html>
