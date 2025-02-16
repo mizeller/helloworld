@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <head>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="f38e5e8c-a760-4c0a-814c-c1489633d62f"></script>
   <meta content="text/html; charset=UTF-8" name="Content-Type" />
@@ -30,6 +31,7 @@
   <link rel="stylesheet" href="/helloworld/css/styles.css">
 </head>
 
+</head>
 <body>
     
 <a class="muted small" href="/">← michel zeller</a>
@@ -48,18 +50,19 @@ can manually add or remove them from their own Goggins Blocker dashboard. All da
 Chrome and requires no login nor is any data sent or received by first or third parties.</p>
 
 
-      <script>
-          document.getElementById("toggleDarkMode").addEventListener("click", function() {
-      if (isDarkMode()) {
-        localStorage.theme = 'light'
-        document.documentElement.classList.remove('dark')
-      } else {
-        localStorage.theme = 'dark'
-        document.documentElement.classList.add('dark')
-      }
-       updateToggleButtonText();
-      });
-      updateToggleButtonText();
+    <script>
+        document.getElementById("toggleDarkMode").addEventListener("click", function() {
+            if (isDarkMode()) {
+                localStorage.theme = 'light'
+                document.documentElement.classList.remove('dark')
+            } else {
+                localStorage.theme = 'dark'
+                document.documentElement.classList.add('dark')
+            }
+            updateToggleButtonText();
+        });
+        updateToggleButtonText();
     </script>
+    <script src="/js/darkmode.js"></script>
 </body>
 </html>
